@@ -45,3 +45,8 @@ jobs:
      
     - name: Deploying pgModeler
       run: mingw32-make install
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: artifacts
+        path: .
