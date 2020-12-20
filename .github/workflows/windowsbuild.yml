@@ -50,11 +50,7 @@ jobs:
       run: cd D:/a/pgmodeler/pgmodeler/build && windeployqt pgmodeler.exe pgmodeler_ui.dll
      
     - name: link dlls
-      run: cd /mingw64/bin/ &&  cp libicuin*.dll libicuuc*.dll libicudt*.dll libpcre2-16-0.dll libharfbuzz-0.dll \
-        libpng16-16.dll libfreetype-6.dll libgraphite2.dll libglib-2.0-0.dll libpcre-1.dll \
-        libbz2-1.dll libssl-1_1-x64.dll libcrypto-1_1-x64.dll libgcc_s_seh-1.dll \
-        libstdc++-6.dll libwinpthread-1.dll zlib1.dll libpq.dll libxml2-2.dll liblzma-5.dll \
-        libiconv-2.dll libintl-8.dll libbrotlidec.dll libbrotlicommon.dll D:/a/pgmodeler/pgmodeler/build
+      run: cd /mingw64/bin/ &&  cp libicuin*.dll libicuuc*.dll libicudt*.dll libpcre2-16-0.dll libharfbuzz-0.dll libpng16-16.dll libfreetype-6.dll libgraphite2.dll libglib-2.0-0.dll libpcre-1.dll libbz2-1.dll libssl-1_1-x64.dll libcrypto-1_1-x64.dll libgcc_s_seh-1.dll libstdc++-6.dll libwinpthread-1.dll zlib1.dll libpq.dll libxml2-2.dll liblzma-5.dll libiconv-2.dll libintl-8.dll libbrotlidec.dll libbrotlicommon.dll D:/a/pgmodeler/pgmodeler/build
 
     - uses: actions/upload-artifact@v2
       with:
